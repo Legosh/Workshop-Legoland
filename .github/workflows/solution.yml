@@ -15,9 +15,8 @@ jobs:
           solution-file: out/contoso_university_core.zip
           solution-folder: contents
           solution-type: Both
-      - uses: actions/upload-artifac@v2
+      - uses: actions/upload-artifact@v2
         with:
           name: packed-solution
           path: out/
-
     
