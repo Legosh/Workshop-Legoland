@@ -11,7 +11,6 @@ on:
 jobs:
   deploy:
     runs-on: windows-latest
-    if: ${{ github.event.workflow_run.conclussion== 'success' }}
     environment: production
     steps:
       - uses: dawidd6/action-download-artifact@v2
